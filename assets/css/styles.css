@@ -1,6 +1,7 @@
 :root {
     --main-text-color: lightblue;
     --bg-color: black;
+    --minor-text-color: black;
 
 }
 
@@ -8,26 +9,33 @@ body {
     font-size: normal;
     display: flex;
     justify-content: flex-start;
-    background-color: var(--bg-color)
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
 }
 
-header {
+header h1{
+    font-size: 300%;
     text-align: center;
-    color: var(--main-text-color)
-
+    margin: 40px;
 }
 
 footer {
+    color: var(--minor-text-color);
     background-color: lightblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-.small-snippet {
-    border-style: groove;
+.small-snippet-title {
+    border-style: solid;
     padding: 20px;
     display: flex; 
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-end;
-    flex: 0 0 400px;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 992px) {
