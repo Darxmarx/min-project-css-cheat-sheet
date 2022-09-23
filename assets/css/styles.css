@@ -1,4 +1,6 @@
 :root {
+    --main-text-color: lightblue;
+    --bg-color: black;
 
 }
 
@@ -6,6 +8,26 @@ body {
     font-size: normal;
     display: flex;
     justify-content: flex-start;
+    background-color: var(--bg-color)
+}
+
+header {
+    text-align: center;
+    color: var(--main-text-color)
+
+}
+
+footer {
+    background-color: lightblue;
+}
+
+.small-snippet {
+    border-style: groove;
+    padding: 20px;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex: 0 0 400px;
 }
 
 @media screen and (max-width: 992px) {
@@ -13,5 +35,5 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    
+
 }
