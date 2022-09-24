@@ -2,11 +2,10 @@
     --main-text-color: lightblue;
     --bg-color: black;
     --minor-text-color: black;
-
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* important for flex boxes */
 }
 
 body {
@@ -20,7 +19,14 @@ body {
 
 header h1 {
     font-size: 300%;
-    margin: 40px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+header p {
+    margin: 20px;
 }
 
 main {
@@ -42,19 +48,22 @@ section h2 {
     border-style: outset;
     border-width: 1px;
     margin: 20px;
-    transition: color 2s, background-color 2s ease-in-out;
+    transition: color 2s, background-color 2s ease-in-out; /* stores a transition, where the color changes gradually across 2 seconds with a slow start and slow end */
 }
 
-section h2:hover {
+section h2:hover { /* swaps the colors of the h2 headings upon hovering the mouse */
     background-color: var(--main-text-color);
     color: var(--bg-color);
 }
 
-section pre {
+section pre { 
+    user-select: all;
     font-family: monospace;
     text-align: left;
     margin: 20px;
-    white-space: pre-wrap;
+    white-space: pre-wrap; /* whitespace is preserved by the browser, and text wraps when necessary and on line breals */
+    color: var(--minor-text-color);
+    background-image: linear-gradient(to bottom,#FFA5FF,#371737); /* gradient travels from first to second color, downwards */
 }
 
 footer {
