@@ -32,12 +32,14 @@ main {
 .snippet {
     border-style: solid;
     border-width: 1px;
-    padding: 20px;
-    margin: 40px;
+    padding: 10px;
+    margin: 10px;
     flex: 1 0 0;
+    width: 25%;
 }
 
 section h2 {
+    white-space: pre-wrap;
     font-size: 250%;
     border-style: outset;
     border-width: 1px;
@@ -53,14 +55,19 @@ section pre {
 footer {
     color: var(--minor-text-color);
     background-color: lightblue;
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
     width: 100%;
-    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .snippet {
+       width: 45%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    main {
-       
+    .snippet {
+       width: 90%;
     }
 }
